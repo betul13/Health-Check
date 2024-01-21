@@ -40,7 +40,7 @@ def get_heart_model():
     return model_heart
 
 
-st.header("Ada Lovelace Health Control System")
+st.header("❤️ Ada Lovelace Health Control System 🏥🩺")
 
 
 # Her bir sütunu ayrı bir değişkene ata
