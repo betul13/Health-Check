@@ -1,0 +1,133 @@
+GENDER,AGE,OCCUPATION,SLEEP DURATION,QUALITY OF SLEEP,PHYSICAL ACTIVITY LEVEL,STRESS LEVEL,BMI CATEGORY,HEART RATE,DAILY STEPS,SLEEP DISORDER,BLOOD PRESSURE CATEGORY,SYSTOLIC,DIASTOLIC,SLEEP QUALITY SCORE,ACTIVITY SCORE,NEW_AGE_CAT
+Male,27,Software Engineer,6.1,6,42,6,Overweight,77,4200,No,High Blood Pressure ,126,83,36.599999999999994,176400,young
+Male,28,Doctor,6.2,6,60,8,Normal,75,10000,No,High Blood Pressure ,125,80,37.2,600000,young
+Male,28,Sales Representative,5.9,4,30,8,Obese,85,3000,Sleep Apnea,High Blood Pressure ,140,90,23.6,90000,young
+Male,28,Software Engineer,5.9,4,30,8,Obese,85,3000,Insomnia,High Blood Pressure ,140,90,23.6,90000,young
+Male,29,Teacher,6.3,6,40,7,Obese,82,3500,Insomnia,High Blood Pressure ,140,90,37.8,140000,young
+Male,29,Doctor,7.8,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,54.6,600000,young
+Male,29,Doctor,6.1,6,30,8,Normal,70,8000,No,High Blood Pressure ,120,80,36.599999999999994,240000,young
+Male,29,Doctor,6.0,6,30,8,Normal,70,8000,No,High Blood Pressure ,120,80,36.0,240000,young
+Female,29,Nurse,6.5,5,40,7,Normal Weight,80,4000,Sleep Apnea,High Blood Pressure ,132,87,32.5,160000,young
+Male,29,Doctor,6.0,6,30,8,Normal,70,8000,Sleep Apnea,High Blood Pressure ,120,80,36.0,240000,young
+Female,29,Nurse,6.5,5,40,7,Normal Weight,80,4000,Insomnia,High Blood Pressure ,132,87,32.5,160000,young
+Male,30,Doctor,7.6,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,53.199999999999996,600000,young
+Male,30,Doctor,7.7,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,53.9,600000,young
+Male,30,Doctor,7.8,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,54.6,600000,young
+Male,30,Doctor,7.9,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,55.300000000000004,600000,young
+Female,30,Nurse,6.4,5,35,7,Normal Weight,78,4100,Sleep Apnea,High Blood Pressure ,130,86,32.0,143500,young
+Female,30,Nurse,6.4,5,35,7,Normal Weight,78,4100,Insomnia,High Blood Pressure ,130,86,32.0,143500,young
+Female,31,Nurse,7.9,8,75,4,Normal Weight,69,6800,No,Normal,117,76,63.2,510000,young
+Male,31,Doctor,6.1,6,30,8,Normal,72,5000,No,High Blood Pressure ,125,80,36.599999999999994,150000,young
+Male,31,Doctor,7.7,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,53.9,600000,young
+Male,31,Doctor,7.6,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,53.199999999999996,600000,young
+Male,31,Doctor,7.8,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,54.6,600000,young
+Male,31,Doctor,7.7,7,75,6,Normal,70,8000,Sleep Apnea,High Blood Pressure ,120,80,53.9,600000,young
+Male,32,Engineer,7.5,8,45,3,Normal,70,8000,No,High Blood Pressure ,120,80,60.0,360000,young
+Male,32,Doctor,6.0,6,30,8,Normal,72,5000,No,High Blood Pressure ,125,80,36.0,150000,young
+Male,32,Doctor,7.6,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,53.199999999999996,600000,young
+Male,32,Doctor,7.7,7,75,6,Normal,70,8000,No,High Blood Pressure ,120,80,53.9,600000,young
+Male,32,Doctor,6.2,6,30,8,Normal,72,5000,No,High Blood Pressure ,125,80,37.2,150000,young
+Male,32,Accountant,7.2,8,50,6,Normal Weight,68,7000,No,Normal,118,76,57.6,350000,young
+Male,33,Doctor,6.0,6,30,8,Normal,72,5000,Insomnia,High Blood Pressure ,125,80,36.0,150000,young
+Female,33,Scientist,6.2,6,50,6,Overweight,76,5500,No,High Blood Pressure ,128,85,37.2,275000,young
+Male,33,Doctor,6.1,6,30,8,Normal,72,5000,No,High Blood Pressure ,125,80,36.599999999999994,150000,young
+Male,33,Doctor,6.0,6,30,8,Normal,72,5000,No,High Blood Pressure ,125,80,36.0,150000,young
+Female,34,Scientist,5.8,4,32,8,Overweight,81,5200,Sleep Apnea,High Blood Pressure ,131,86,23.2,166400,young
+Male,35,Teacher,6.7,7,40,5,Overweight,70,5600,No,High Blood Pressure ,128,84,46.9,224000,middleage
+Male,35,Software Engineer,7.5,8,60,5,Normal Weight,70,8000,No,High Blood Pressure ,120,80,60.0,480000,middleage
+Female,35,Accountant,7.2,8,60,4,Normal,68,7000,No,Normal,115,75,57.6,420000,middleage
+Male,35,Engineer,7.2,8,60,4,Normal,65,5000,No,High Blood Pressure ,125,80,57.6,300000,middleage
+Male,35,Engineer,7.3,8,60,4,Normal,65,5000,No,High Blood Pressure ,125,80,58.4,300000,middleage
+Male,35,Lawyer,7.4,7,60,5,Obese,84,3300,Sleep Apnea,High Blood Pressure ,135,88,51.800000000000004,198000,middleage
+Female,36,Accountant,7.2,8,60,4,Normal,68,7000,Insomnia,Normal,115,75,57.6,420000,middleage
+Female,36,Accountant,7.1,8,60,4,Normal,68,7000,No,Normal,115,75,56.8,420000,middleage
+Female,36,Accountant,7.2,8,60,4,Normal,68,7000,No,Normal,115,75,57.6,420000,middleage
+Female,36,Teacher,7.1,8,60,4,Normal,68,7000,No,Normal,115,75,56.8,420000,middleage
+Female,36,Teacher,7.2,8,60,4,Normal,68,7000,No,Normal,115,75,57.6,420000,middleage
+Male,36,Teacher,6.6,5,35,7,Overweight,74,4800,Sleep Apnea,High Blood Pressure ,129,84,33.0,168000,middleage
+Female,36,Teacher,7.2,8,60,4,Normal,68,7000,Sleep Apnea,Normal,115,75,57.6,420000,middleage
+Male,36,Teacher,6.6,5,35,7,Overweight,74,4800,Insomnia,High Blood Pressure ,129,84,33.0,168000,middleage
+Female,37,Nurse,6.1,6,42,6,Overweight,77,4200,No,High Blood Pressure ,126,83,36.599999999999994,176400,middleage
+Male,37,Engineer,7.8,8,70,4,Normal Weight,68,7000,No,High Blood Pressure ,120,80,62.4,490000,middleage
+Male,37,Lawyer,7.4,8,60,5,Normal,68,8000,No,High Blood Pressure ,130,85,59.2,480000,middleage
+Female,37,Accountant,7.2,8,60,4,Normal,68,7000,No,Normal,115,75,57.6,420000,middleage
+Female,37,Nurse,7.5,8,60,4,Normal Weight,70,8000,No,High Blood Pressure ,120,80,60.0,480000,middleage
+Male,38,Lawyer,7.3,8,60,5,Normal,68,8000,No,High Blood Pressure ,130,85,58.4,480000,middleage
+Female,38,Accountant,7.1,8,60,4,Normal,68,7000,No,Normal,115,75,56.8,420000,middleage
+Male,38,Lawyer,7.1,8,60,5,Normal,68,8000,No,High Blood Pressure ,130,85,56.8,480000,middleage
+Male,38,Lawyer,7.1,8,60,5,Normal,68,8000,Sleep Apnea,High Blood Pressure ,130,85,56.8,480000,middleage
+Female,38,Lawyer,7.4,7,60,5,Obese,84,3300,Sleep Apnea,High Blood Pressure ,135,88,51.800000000000004,198000,middleage
+Male,39,Lawyer,7.2,8,60,5,Normal,68,8000,Insomnia,High Blood Pressure ,130,85,57.6,480000,middleage
+Male,39,Engineer,6.5,5,40,7,Overweight,80,4000,Insomnia,High Blood Pressure ,132,87,32.5,160000,middleage
+Female,39,Lawyer,6.9,7,50,6,Normal Weight,75,5500,No,High Blood Pressure ,128,85,48.300000000000004,275000,middleage
+Female,39,Accountant,8.0,9,80,3,Normal Weight,67,7500,No,Normal,115,78,72.0,600000,middleage
+Male,39,Lawyer,7.2,8,60,5,Normal,68,8000,No,High Blood Pressure ,130,85,57.6,480000,middleage
+Female,40,Accountant,7.2,8,55,6,Normal Weight,73,7300,No,Normal,119,77,57.6,401500,middleage
+Male,40,Lawyer,7.9,8,90,5,Normal,68,8000,No,High Blood Pressure ,130,85,63.2,720000,middleage
+Male,41,Lawyer,7.6,8,90,5,Normal,70,8000,Insomnia,High Blood Pressure ,130,85,60.8,720000,middleage
+Male,41,Engineer,7.3,8,70,6,Normal Weight,72,6200,No,Elevated,121,79,58.4,434000,middleage
+Male,41,Lawyer,7.1,7,55,6,Overweight,72,6000,No,High Blood Pressure ,125,82,49.699999999999996,330000,middleage
+Male,41,Lawyer,7.7,8,90,5,Normal,70,8000,No,High Blood Pressure ,130,85,61.6,720000,middleage
+Male,41,Lawyer,7.6,8,90,5,Normal,70,8000,No,High Blood Pressure ,130,85,60.8,720000,middleage
+Male,42,Salesperson,6.5,6,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,39.0,270000,middleage
+Male,42,Lawyer,7.8,8,90,5,Normal,70,8000,No,High Blood Pressure ,130,85,62.4,720000,middleage
+Female,42,Teacher,6.8,6,45,7,Overweight,78,5000,Sleep Apnea,High Blood Pressure ,130,85,40.8,225000,middleage
+Female,43,Teacher,6.7,7,45,4,Overweight,65,6000,Insomnia,High Blood Pressure ,135,90,46.9,270000,middleage
+Male,43,Salesperson,6.3,6,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,37.8,270000,middleage
+Male,43,Salesperson,6.5,6,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,39.0,270000,middleage
+Male,43,Salesperson,6.4,6,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,38.400000000000006,270000,middleage
+Male,43,Engineer,7.8,8,90,5,Normal,70,8000,Insomnia,High Blood Pressure ,130,85,62.4,720000,middleage
+Male,43,Engineer,6.9,6,47,7,Normal Weight,69,6800,No,Normal,117,76,41.400000000000006,319600,middleage
+Male,43,Engineer,7.6,8,75,4,Overweight,68,6800,No,High Blood Pressure ,122,80,60.8,510000,middleage
+Male,43,Engineer,7.7,8,90,5,Normal,70,8000,No,High Blood Pressure ,130,85,61.6,720000,middleage
+Male,43,Engineer,7.8,8,90,5,Normal,70,8000,No,High Blood Pressure ,130,85,62.4,720000,middleage
+Male,43,Engineer,7.8,8,90,5,Normal,70,8000,Sleep Apnea,High Blood Pressure ,130,85,62.4,720000,middleage
+Male,43,Salesperson,6.5,6,45,7,Overweight,72,6000,Sleep Apnea,High Blood Pressure ,130,85,39.0,270000,middleage
+Female,44,Teacher,6.6,7,45,4,Overweight,65,6000,Insomnia,High Blood Pressure ,135,90,46.199999999999996,270000,middleage
+Male,44,Salesperson,6.4,6,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,38.400000000000006,270000,middleage
+Male,44,Salesperson,6.3,6,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,37.8,270000,middleage
+Female,44,Teacher,6.5,7,45,4,Overweight,65,6000,Insomnia,High Blood Pressure ,135,90,45.5,270000,middleage
+Male,44,Engineer,6.8,7,45,7,Overweight,78,5000,Insomnia,High Blood Pressure ,130,85,47.6,225000,middleage
+Male,44,Salesperson,6.4,6,45,7,Overweight,72,6000,No,High Blood Pressure ,130,85,38.400000000000006,270000,middleage
+Male,44,Salesperson,6.5,6,45,7,Overweight,72,6000,No,High Blood Pressure ,130,85,39.0,270000,middleage
+Female,45,Teacher,6.8,7,30,6,Overweight,65,6000,Insomnia,High Blood Pressure ,135,90,47.6,180000,middleage
+Female,45,Teacher,6.5,7,45,4,Overweight,65,6000,Insomnia,High Blood Pressure ,135,90,45.5,270000,middleage
+Female,45,Teacher,6.6,7,45,4,Overweight,65,6000,Insomnia,High Blood Pressure ,135,90,46.199999999999996,270000,middleage
+Female,45,Teacher,6.6,7,45,4,Overweight,65,6000,No,High Blood Pressure ,135,90,46.199999999999996,270000,middleage
+Female,45,Manager,6.9,7,55,5,Overweight,75,5500,No,High Blood Pressure ,125,82,48.300000000000004,302500,middleage
+Male,48,Doctor,7.3,7,65,5,Obese,83,3500,Insomnia,High Blood Pressure ,142,92,51.1,227500,middleage
+Female,48,Nurse,5.9,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,35.400000000000006,900000,middleage
+Female,49,Nurse,6.2,6,90,8,Overweight,75,10000,No,High Blood Pressure ,140,95,37.2,900000,middleage
+Female,49,Nurse,6.0,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,36.0,900000,middleage
+Female,49,Nurse,6.1,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,36.599999999999994,900000,middleage
+Female,49,Nurse,6.2,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,37.2,900000,middleage
+Male,49,Doctor,8.1,9,85,3,Obese,86,3700,Sleep Apnea,High Blood Pressure ,139,91,72.89999999999999,314500,middleage
+Female,50,Nurse,6.1,6,90,8,Overweight,75,10000,Insomnia,High Blood Pressure ,140,95,36.599999999999994,900000,middleage
+Female,50,Engineer,8.3,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,74.7,150000,middleage
+Female,50,Nurse,6.0,6,90,8,Overweight,75,10000,No,High Blood Pressure ,140,95,36.0,900000,middleage
+Female,50,Nurse,6.1,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,36.599999999999994,900000,middleage
+Female,50,Nurse,6.0,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,36.0,900000,middleage
+Female,51,Engineer,8.5,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,76.5,150000,middleage
+Female,51,Nurse,7.1,7,55,6,Normal Weight,72,6000,No,High Blood Pressure ,125,82,49.699999999999996,330000,middleage
+Female,51,Nurse,6.0,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,36.0,900000,middleage
+Female,51,Nurse,6.1,6,90,8,Overweight,75,10000,Sleep Apnea,High Blood Pressure ,140,95,36.599999999999994,900000,middleage
+Female,52,Accountant,6.5,7,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,45.5,270000,middleage
+Female,52,Accountant,6.6,7,45,7,Overweight,72,6000,Insomnia,High Blood Pressure ,130,85,46.199999999999996,270000,middleage
+Female,52,Engineer,8.4,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,75.60000000000001,150000,middleage
+Female,53,Engineer,8.3,9,30,3,Normal,65,5000,Insomnia,High Blood Pressure ,125,80,74.7,150000,middleage
+Female,53,Engineer,8.5,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,76.5,150000,middleage
+Female,53,Engineer,8.4,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,75.60000000000001,150000,middleage
+Female,53,Engineer,8.3,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,74.7,150000,middleage
+Female,54,Engineer,8.4,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,75.60000000000001,150000,middleage
+Female,54,Engineer,8.5,9,30,3,Normal,65,5000,No,High Blood Pressure ,125,80,76.5,150000,middleage
+Female,55,Nurse,8.1,9,75,4,Overweight,72,5000,Sleep Apnea,High Blood Pressure ,140,95,72.89999999999999,375000,middleage
+Female,56,Doctor,8.2,9,90,3,Normal Weight,65,10000,No,Normal,118,75,73.8,900000,old
+Female,57,Nurse,8.1,9,75,3,Overweight,68,7000,No,High Blood Pressure ,140,95,72.89999999999999,525000,old
+Female,57,Nurse,8.2,9,75,3,Overweight,68,7000,Sleep Apnea,High Blood Pressure ,140,95,73.8,525000,old
+Female,57,Nurse,8.1,9,75,3,Overweight,68,7000,Sleep Apnea,High Blood Pressure ,140,95,72.89999999999999,525000,old
+Female,58,Nurse,8.0,9,75,3,Overweight,68,7000,Sleep Apnea,High Blood Pressure ,140,95,72.0,525000,old
+Female,59,Nurse,8.0,9,75,3,Overweight,68,7000,No,High Blood Pressure ,140,95,72.0,525000,old
+Female,59,Nurse,8.1,9,75,3,Overweight,68,7000,No,High Blood Pressure ,140,95,72.89999999999999,525000,old
+Female,59,Nurse,8.2,9,75,3,Overweight,68,7000,Sleep Apnea,High Blood Pressure ,140,95,73.8,525000,old
+Female,59,Nurse,8.0,9,75,3,Overweight,68,7000,Sleep Apnea,High Blood Pressure ,140,95,72.0,525000,old
+Female,59,Nurse,8.1,9,75,3,Overweight,68,7000,Sleep Apnea,High Blood Pressure ,140,95,72.89999999999999,525000,old
