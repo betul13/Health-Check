@@ -60,12 +60,6 @@ column_betul,column_sumeyye = tab_info.columns(2)
 
 
 
-column_who.markdown("""
-<div style="text-align: center;">
-    <h3 style="color:blue;">About Us</h3>
-</div>
-""", unsafe_allow_html=True)
-
 # Fotoğrafı ekleyin
 image_path = "IMG_4410.png"  # Resminizin doğru dosya yolunu belirtin
 image = Image.open(image_path)
