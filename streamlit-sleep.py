@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import datetime
 import plotly.express as px
 import pickle
 import joblib
@@ -8,7 +7,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, OrdinalEncoder
 from sklearn.preprocessing import StandardScaler
-import time
 import numpy as np
 from PIL import Image
 
@@ -40,7 +38,7 @@ def get_heart_model():
     return model_heart
 
 
-st.header("❤️ Ada Lovelace Health Control System 🏥🩺")
+st.header("❤️Ada Lovelace Health Control System 🏥🩺")
 
 
 # Her bir sütunu ayrı bir değişkene ata
