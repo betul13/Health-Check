@@ -50,7 +50,7 @@ tab_info, tab_home, tab_vis,tab_heart, tab_model = st.tabs(("Information", "Slee
 
 column_who = tab_info.columns(1)[0]
 
-column_who.subheader(':blue[Who are we ?]:female-technologist:')
+column_who.subheader(':blue[Who we are ?]:female-technologist:')
 
 column_who.markdown("""As Betül Uluocak and Sümeyye Çelik, participants of the Data Science Academy in the Ada Lovelace Academy Project,
                     we came together and implemented a disease detection project that we believe can benefit humanity by using data science and machine learning technologies. 
