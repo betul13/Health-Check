@@ -23,7 +23,8 @@ def get_data():
 
 
 def get_model():
-    model = joblib.load(r"stacking_model.joblib")
+    with open("stacking_model.pkl", "rb") as model_file:
+        model = pickle.load(model_file)
     return model
 
 
