@@ -606,7 +606,7 @@ gender = column_model.selectbox("GENDER", df["GENDER"].unique())
 
 
 age = column_model.number_input(
-    "AGE", min_value=df["AGE"].min(), max_value=df["AGE"].max(), value=df["AGE"].min()
+    "AGE",value=df["AGE"].min()
 )
 
 
@@ -614,30 +614,31 @@ occupation = column_model.selectbox("OCCUPATION", df["OCCUPATION"].unique())
 
 sleep_duration = column_model.number_input(
     "SLEEP DURATION",
-    min_value=df["SLEEP DURATION"].min(),
-    max_value=df["SLEEP DURATION"].max(),
-    value=df["SLEEP DURATION"].min(),
+    min_value=0.0,
+    max_value=24.0,
+    step = 0.1,
+    value=df["SLEEP DURATION"].min()
 )
 
 quality_sleep = column_model.number_input(
     "QUALITY OF SLEEP",
-    min_value=df["QUALITY OF SLEEP"].min(),
-    max_value=df["QUALITY OF SLEEP"].max(),
-    value=df["QUALITY OF SLEEP"].min(),
+    min_value=0,
+    max_value=10,
+    value=df["QUALITY OF SLEEP"].min()
 )
 
 physical_activity_level = column_model.number_input(
     "PHYSICAL ACTIVITY LEVEL",
-    min_value=df["PHYSICAL ACTIVITY LEVEL"].min(),
-    max_value=df["PHYSICAL ACTIVITY LEVEL"].max(),
-    value=df["PHYSICAL ACTIVITY LEVEL"].min(),
+    min_value=0,
+    max_value=100,
+    value=df["PHYSICAL ACTIVITY LEVEL"].min()
 )
 
 stress_level = column_model.number_input(
     "STRESS LEVEL",
-    min_value=df["STRESS LEVEL"].min(),
-    max_value=df["STRESS LEVEL"].max(),
-    value=df["STRESS LEVEL"].min(),
+    min_value=0,
+    max_value=10,
+    value=df["STRESS LEVEL"].min()
 )
 
 bmı_category = column_model.selectbox("BMI CATEGORY", df["BMI CATEGORY"].unique())
@@ -646,14 +647,12 @@ heart_rate = column_model.number_input(
     "HEART RATE",
     min_value=df["HEART RATE"].min(),
     max_value=df["HEART RATE"].max(),
-    value=df["HEART RATE"].min(),
+    value=df["HEART RATE"].min()
 )
 
 daily_steps = column_model.number_input(
     "DAILY STEPS",
-    min_value=df["DAILY STEPS"].min(),
-    max_value=df["DAILY STEPS"].max(),
-    value=df["DAILY STEPS"].min(),
+    value=df["DAILY STEPS"].min()
 )
 
 blood_pressure_cat = column_model.selectbox(
