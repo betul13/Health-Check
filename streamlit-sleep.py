@@ -23,7 +23,7 @@ def get_data():
 
 
 def get_model():
-    with open("stacking_model.pkl", "rb") as model_file:
+    with open("svc.pkl", "rb") as model_file:
         model = pickle.load(model_file)
     return model
 
