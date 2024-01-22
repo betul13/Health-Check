@@ -685,11 +685,12 @@ encoded_user_data = encoder.transform(
     user_df[["OCCUPATION", "BMI CATEGORY", "BLOOD PRESSURE CATEGORY", "NEW_AGE_CAT"]]
 ).toarray()
 
+st.write("before error")
 # One-Hot Encoding sonrası sütun isimlerini al
 # encoder nesnesini kullanarak One-Hot Encoding uygulanmış sütun isimlerini al
 encoded_columns = encoder.get_feature_names_out(input_features=ohe_columns)
 
-
+st.write("after error")
 # One-Hot Encoding sonrası veriyi DataFrame'e dönüştür
 encoded_user_data = pd.DataFrame(encoded_user_data, columns=encoded_columns)
 
