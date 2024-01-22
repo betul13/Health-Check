@@ -257,6 +257,7 @@ shape_container.markdown(
 # Şeklin içine metni yerleştir
 col_text.markdown(f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True)
 # TAB HOME#
+
 column_sleep, column_dataset = tab_home.columns(2, gap="large")
 
 column_sleep.subheader(":blue[Purpose of Sleeping Sickness Prediction App]")
@@ -605,50 +606,54 @@ gender = column_model.selectbox("GENDER", df["GENDER"].unique())
 
 
 age = column_model.number_input(
-    "AGE", value=df["AGE"].min()
+    "AGE", min_value=df["AGE"].min(), max_value=df["AGE"].max(), value=df["AGE"].min()
 )
 
 
 occupation = column_model.selectbox("OCCUPATION", df["OCCUPATION"].unique())
 
 sleep_duration = column_model.number_input(
-    "SLEEP DURATION", 
-    min_value=1, 
-    max_value=24,
-    value=df["SLEEP DURATION"].min()
+    "SLEEP DURATION",
+    min_value=df["SLEEP DURATION"].min(),
+    max_value=df["SLEEP DURATION"].max(),
+    value=df["SLEEP DURATION"].min(),
 )
 
 quality_sleep = column_model.number_input(
     "QUALITY OF SLEEP",
-    min_value=1,
-    max_value=10,
-    value=df["QUALITY OF SLEEP"].min()
+    min_value=df["QUALITY OF SLEEP"].min(),
+    max_value=df["QUALITY OF SLEEP"].max(),
+    value=df["QUALITY OF SLEEP"].min(),
 )
 
 physical_activity_level = column_model.number_input(
     "PHYSICAL ACTIVITY LEVEL",
-    min_value= 0, 
-    max_value= 100,
-    value=df["PHYSICAL ACTIVITY LEVEL"].min()
+    min_value=df["PHYSICAL ACTIVITY LEVEL"].min(),
+    max_value=df["PHYSICAL ACTIVITY LEVEL"].max(),
+    value=df["PHYSICAL ACTIVITY LEVEL"].min(),
 )
 
 stress_level = column_model.number_input(
     "STRESS LEVEL",
-    min_value=0,
-    max_value=10,
-    value=df["STRESS LEVEL"].min()
+    min_value=df["STRESS LEVEL"].min(),
+    max_value=df["STRESS LEVEL"].max(),
+    value=df["STRESS LEVEL"].min(),
 )
 
 bmı_category = column_model.selectbox("BMI CATEGORY", df["BMI CATEGORY"].unique())
 
 heart_rate = column_model.number_input(
     "HEART RATE",
-    value=df["HEART RATE"].min()
+    min_value=df["HEART RATE"].min(),
+    max_value=df["HEART RATE"].max(),
+    value=df["HEART RATE"].min(),
 )
 
 daily_steps = column_model.number_input(
     "DAILY STEPS",
-    value=df["DAILY STEPS"].min()
+    min_value=df["DAILY STEPS"].min(),
+    max_value=df["DAILY STEPS"].max(),
+    value=df["DAILY STEPS"].min(),
 )
 
 blood_pressure_cat = column_model.selectbox(
@@ -657,13 +662,17 @@ blood_pressure_cat = column_model.selectbox(
 
 systolic = column_model.number_input(
     "SYSTOLIC",
-    value=df["SYSTOLIC"].min()
+    min_value=df["SYSTOLIC"].min(),
+    max_value=df["SYSTOLIC"].max(),
+    value=df["SYSTOLIC"].min(),
 )
 
 
 diastolic = column_model.number_input(
     "DIASTOLIC",
-    value=df["DIASTOLIC"].min()
+    min_value=df["DIASTOLIC"].min(),
+    max_value=df["DIASTOLIC"].max(),
+    value=df["DIASTOLIC"].min(),
 )
 
 sleep_quality_score = sleep_duration * quality_sleep
