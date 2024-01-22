@@ -623,46 +623,34 @@ occupation = column_model.selectbox("OCCUPATION", df["OCCUPATION"].unique())
 
 sleep_duration = column_model.number_input(
     "SLEEP DURATION",
-    min_value=df["SLEEP DURATION"].min(),
-    max_value=df["SLEEP DURATION"].max(),
-    value=df["SLEEP DURATION"].min(),
+    value=df["SLEEP DURATION"].min()
 )
 
 quality_sleep = column_model.number_input(
     "QUALITY OF SLEEP",
-    min_value=df["QUALITY OF SLEEP"].min(),
-    max_value=df["QUALITY OF SLEEP"].max(),
-    value=df["QUALITY OF SLEEP"].min(),
+    value=df["QUALITY OF SLEEP"].min()
 )
 
 physical_activity_level = column_model.number_input(
     "PHYSICAL ACTIVITY LEVEL",
-    min_value=df["PHYSICAL ACTIVITY LEVEL"].min(),
-    max_value=df["PHYSICAL ACTIVITY LEVEL"].max(),
-    value=df["PHYSICAL ACTIVITY LEVEL"].min(),
+    value=df["PHYSICAL ACTIVITY LEVEL"].min()
 )
 
 stress_level = column_model.number_input(
     "STRESS LEVEL",
-    min_value=df["STRESS LEVEL"].min(),
-    max_value=df["STRESS LEVEL"].max(),
-    value=df["STRESS LEVEL"].min(),
+    value=df["STRESS LEVEL"].min()
 )
 
 bmı_category = column_model.selectbox("BMI CATEGORY", df["BMI CATEGORY"].unique())
 
 heart_rate = column_model.number_input(
     "HEART RATE",
-    min_value=df["HEART RATE"].min(),
-    max_value=df["HEART RATE"].max(),
-    value=df["HEART RATE"].min(),
+    value=df["HEART RATE"].min()
 )
 
 daily_steps = column_model.number_input(
     "DAILY STEPS",
-    min_value=df["DAILY STEPS"].min(),
-    max_value=df["DAILY STEPS"].max(),
-    value=df["DAILY STEPS"].min(),
+    value=df["DAILY STEPS"].min()
 )
 
 blood_pressure_cat = column_model.selectbox(
@@ -671,17 +659,13 @@ blood_pressure_cat = column_model.selectbox(
 
 systolic = column_model.number_input(
     "SYSTOLIC",
-    min_value=df["SYSTOLIC"].min(),
-    max_value=df["SYSTOLIC"].max(),
-    value=df["SYSTOLIC"].min(),
+    value=df["SYSTOLIC"].min()
 )
 
 
 diastolic = column_model.number_input(
     "DIASTOLIC",
-    min_value=df["DIASTOLIC"].min(),
-    max_value=df["DIASTOLIC"].max(),
-    value=df["DIASTOLIC"].min(),
+    value=df["DIASTOLIC"].min()
 )
 
 sleep_quality_score = sleep_duration * quality_sleep
