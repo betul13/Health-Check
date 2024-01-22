@@ -615,7 +615,7 @@ gender = column_model.selectbox("GENDER", df["GENDER"].unique())
 
 
 age = column_model.number_input(
-    "AGE", min_value=df["AGE"].min(), max_value=df["AGE"].max(), value=df["AGE"].min()
+    "AGE",value=df["AGE"].min()
 )
 
 
