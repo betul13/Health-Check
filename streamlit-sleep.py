@@ -18,7 +18,7 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def get_data():
-    df = pd.read_csv(r"C:\Users\bett0\sleeping-sickness-prediction\prepared_data.csv")
+    df = pd.read_csv(r"prepared_data.csv")
     return df
 
 
