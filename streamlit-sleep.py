@@ -692,8 +692,7 @@ encoded_columns = encoder.get_feature_names_out(
         "BMI CATEGORY",
         "BLOOD PRESSURE CATEGORY",
         "NEW_AGE_CAT",
-    ]
-)
+    ])
 
 # One-Hot Encoding sonrası veriyi DataFrame'e dönüştür
 encoded_user_data = pd.DataFrame(encoded_user_data, columns=encoded_columns)
@@ -768,13 +767,9 @@ if column_model.button("Tahmin Et"):
     if prediction == 0:
         column_model.success("SLEEPING SICKNESS PREDICTION: You have healthy sleep!")
     elif prediction == 1:
-        column_model.warning(
-            "SLEEPING SICKNESS PREDICTION: You may have sleep problems, you should see a doctor! You are showing symptoms of insomnia."
-        )
+        column_model.warning("SLEEPING SICKNESS PREDICTION: You may have sleep problems, you should see a doctor! You are showing symptoms of insomnia.")
     elif prediction == 2:
-        column_model.error(
-            "SLEEPING SICKNESS PREDICTION: You have healthy sleep! You are showing symptoms of Sleep Apnea."
-        )
+        column_model.error("SLEEPING SICKNESS PREDICTION: You have healthy sleep! You are showing symptoms of Sleep Apnea." )
 
 
 # TAB MODEL
@@ -835,9 +830,8 @@ restecg = column_heart.selectbox(
 )
 encode_restecg = label_encoder_resteg.transform([restecg])[0]
 thalachh = column_heart.number_input("Maximum heart rate", min_value=50, max_value=300)
-slp = column_heart.selectbox(
-    "Slope of the exercise ST segment", ["Upsloping", "Flat", "Downsloping"]
-)
+slp = column_heart.selectbox("Slope of the exercise ST segment", ["Upsloping", "Flat", "Downsloping"])
+
 encode_slp = label_encoder_slp.transform([slp])[0]
 
 user_input = pd.DataFrame(
@@ -851,16 +845,10 @@ user_input = pd.DataFrame(
         "restecg": [encode_restecg],
         "thalachh": [thalachh],
         "slp": [encode_slp],
-    }
-)
+    })
 if column_heart.button("Tahmin et", key="heart_button_key"):
     prediction = heart_model.predict(user_input)
     if prediction == 0:
-        column_heart.success(
-            f"You have a healthy heart, but it is recommended that you see a doctor for a definitive conclusion."
-        )
+        column_heart.success(f"You have a healthy heart, but it is recommended that you see a doctor for a definitive conclusion.")
     else:
-        column_heart.warning(
-            "You seem to have a heart condition. It is recommended that you go to the doctor for a check-up.",
-            icon="⚠️",
-        )
+        column_heart.warning("You seem to have a heart condition. It is recommended that you go to the doctor for a check-up.",icon="⚠️",)
