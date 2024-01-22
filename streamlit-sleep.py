@@ -257,16 +257,6 @@ shape_container.markdown(
 # Şeklin içine metni yerleştir
 col_text.markdown(f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True)
 # TAB HOME#
-
-tab_home.subheader(":blue[Health Prediction App]")
-tab_home.markdown(
-    """
-This app uses a model that predicts important health conditions such as sleep disorders, heart health and diabetes.
-Health predictions provide valuable information about individuals' lifestyle and health habits
-Early diagnosis can help develop personalized treatment and healthy living strategies.
-"""
-)
-
 column_sleep, column_dataset = tab_home.columns(2, gap="large")
 
 column_sleep.subheader(":blue[Purpose of Sleeping Sickness Prediction App]")
@@ -615,29 +605,37 @@ gender = column_model.selectbox("GENDER", df["GENDER"].unique())
 
 
 age = column_model.number_input(
-    "AGE",value=df["AGE"].min()
+    "AGE", value=df["AGE"].min()
 )
 
 
 occupation = column_model.selectbox("OCCUPATION", df["OCCUPATION"].unique())
 
 sleep_duration = column_model.number_input(
-    "SLEEP DURATION",
+    "SLEEP DURATION", 
+    min_value=1, 
+    max_value=24,
     value=df["SLEEP DURATION"].min()
 )
 
 quality_sleep = column_model.number_input(
     "QUALITY OF SLEEP",
+    min_value=1,
+    max_value=10,
     value=df["QUALITY OF SLEEP"].min()
 )
 
 physical_activity_level = column_model.number_input(
     "PHYSICAL ACTIVITY LEVEL",
+    min_value= 0, 
+    max_value= 100,
     value=df["PHYSICAL ACTIVITY LEVEL"].min()
 )
 
 stress_level = column_model.number_input(
     "STRESS LEVEL",
+    min_value=0,
+    max_value=10,
     value=df["STRESS LEVEL"].min()
 )
 
