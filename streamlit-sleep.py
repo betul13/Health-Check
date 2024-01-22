@@ -47,51 +47,85 @@ tab_info, tab_home, tab_vis, tab_heart, tab_model = st.tabs(
     ("Information", "Sleep Disorder", "Sleep Disorder Graphics", "Heart ", "Model")
 )
 
+#TAB INFO#
 
-# TAB INFO#
+tab_info.title("")
+
+# Sayfa içeriğini ortala ve büyüt
+tab_info.markdown("""
+<div style='text-align: center; font-size: 25px;'> 
+This application is a data science project that predicts important health conditions such as <strong>sleep disorders</strong> and <strong>heart health</strong>.
+Health predictions provide valuable information about individuals' lifestyle and health habits.
+It can help in early diagnosis, personalised treatment and development of healthy living strategies.
+This project was carried out by <strong>Betül Ulucak</strong> and <strong>Sümeyye Çelik</strong> as a graduation project of <strong>SistersLab - Women in Science and Technology Association AdaLovelace Academy</strong>.
+We would like to thank our lecturer <strong>Kemal Soylu</strong>, our <strong>project assistants</strong> and our mentor <strong>Aylin Kaymaz</strong> for taking care of us during the academy. 
+</div>
+""", unsafe_allow_html=True)
+
+tab_info.title("")
+
+tab_info.markdown("""
+<div style='text-align: center; font-size: 40px;'>
+    <h1 style="color:#3498db;">About Us</h1>
+</div>
+""", unsafe_allow_html=True)
+
+column_betul,column_sumeyye = tab_info.columns(2)
 
 
-column_who = tab_info.columns(1)[0]
 
-column_who.subheader(":blue[Who we are ?]:female-technologist:")
-
-column_who.markdown(
-    """As Betül Uluocak and Sümeyye Çelik, participants of the Data Science Academy in the Ada Lovelace Academy Project,
-                    we came together and implemented a disease detection project that we believe can benefit humanity by using data science and machine learning technologies. 
-                    This project aims to contribute to the early diagnosis of diseases. """
-)
-
-column_betul, column_sumeyye = tab_info.columns(2)
-
+col_image2 , col_text2 = column_betul.columns([1,2])
 
 # Fotoğrafı ekleyin
 image_path = "IMG_4410.png"  # Resminizin doğru dosya yolunu belirtin
 image = Image.open(image_path)
-new_image = image.resize((200, 200))
-column_betul.image(new_image)
+new_image = image.resize((200,200))
+col_image2.image(new_image)
+
+col_image2.header("Betül Uluocak")
 
 
 # LinkedIn simgesi ve bağlantısı
 linkedin_icon = """
-<a href="https://www.linkedin.com/in/betululuocak/" target="_blank">
-    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="30" height="30">
-</a>
-"""
+<head>
+    <style>
+    .fa {
+    float: right;
+    </style>
+</head>
+<body>
+    <div class ="fa">
+        <a href="https://www.linkedin.com/in/betululuocak/" target="_blank">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+        </a>
+    </div>
+</body>
+""" 
 
 github_icon = """
-<a href="https://github.com/betul13" target="_blank">
-    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='30' height='30' viewBox='0 0 48 48'%3E%3Cpath d='M44,24c0,8.96-5.88,16.54-14,19.08V38c0-1.71-0.72-3.24-1.86-4.34c5.24-0.95,7.86-4,7.86-9.66c0-2.45-0.5-4.39-1.48-5.9 c0.44-1.71,0.7-4.14-0.52-6.1c-2.36,0-4.01,1.39-4.98,2.53C27.57,14.18,25.9,14,24,14c-1.8,0-3.46,0.2-4.94,0.61 C18.1,13.46,16.42,12,14,12c-1.42,2.28-0.84,4.74-0.3,6.12C12.62,19.63,12,21.57,12,24c0,5.66,2.62,8.71,7.86,9.66 c-0.67,0.65-1.19,1.44-1.51,2.34H16c-1.44,0-2-0.64-2.77-1.68c-0.77-1.04-1.6-1.74-2.59-2.03c-0.53-0.06-0.89,0.37-0.42,0.75 c1.57,1.13,1.68,2.98,2.31,4.19C13.1,38.32,14.28,39,15.61,39H18v4.08C9.88,40.54,4,32.96,4,24C4,12.95,12.95,4,24,4 S44,12.95,44,24z'/%3E%3C/svg%3E" width="30" height="30" alt="GitHub"/>
-</a>
-"""
+<head>
+    <style>
+    .fa {
+    float: right;
+    </style>
+</head>
+<body>
+    <div class ="fa">
+        <a href="https://github.com/betul13" target="_blank">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/000000/github.png" alt="github"/>
+        </a>
+    </div>
+</body>
+""" 
 
 # LinkedIn ve GitHub simgelerini yan yana görüntüle
 icons = f"{linkedin_icon} {github_icon}"
-column_betul.markdown(icons, unsafe_allow_html=True)
+col_image2.markdown(icons, unsafe_allow_html=True)
 
 
 # Metni bir şeklin içine yaz
 text_inside_shape = """
-<p class="shape" style="color: white; font-size: 18px; text-align: center; line-height: 1.6;">
+<p class="shape" style="color: black; font-size: 18px; text-align: center; line-height: 1.6;">
     I graduated from Yıldız Technical University, Department of Electrical Engineering in 2023. 
     With my graduation, my interest in the field of data science and machine learning increased. 
     My passion for continuous learning and improvement in this field has led me to further progress in this field. 
@@ -112,7 +146,7 @@ shape_container.markdown(
     """
     <style>
         .shape {
-            background-color: #3498db; /* Açık mavi tonu */
+            background-color: #add8e6;  
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
@@ -123,39 +157,77 @@ shape_container.markdown(
 )
 
 # Şeklin içine metni yerleştir
-shape_container.markdown(
-    f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True
-)
+col_text2.markdown(f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True)
 
+col_image, col_text = column_sumeyye.columns([1,2])
 
 # Fotoğrafı ekleyin
-image_path = "Ekran Görüntüsü (213).png"
+image_path = "Ekran Görüntüsü (213).png"  
 image = Image.open(image_path)
-new_image = image.resize((200, 200))
-column_sumeyye.image(new_image)
+new_image = image.resize((200,200))
+image_knm ="""
+<head>
+    <style>
+    .fa {
+    float: right;
+    </style>
+</head>
+<body>
+    <div class ="fa">
+        <a target="_blank">
+            <img width="200" height="200" src="health_check/media/Ekran Görüntüsü (213).png" alt="linkedin"/>
+        </a>
+    </div>
+</body>
+""" 
+col_image.image(new_image)
+
+col_image.header("Sümeyye Çelik")
 
 
 # LinkedIn simgesi ve bağlantısı
 linkedin_icon = """
-<a href="https://www.linkedin.com/in/sumeyyecelik/" target="_blank">
-    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="30" height="30">
-</a>
+<head>
+    <style>
+    .fa {
+    float: left;
+    </style>
+</head>
+<body>
+    <div class ="fa">
+        <a href="https://www.linkedin.com/in/sumeyyecelik/" target="_blank">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+        </a>
+    </div>
+</body>
 """
 
 github_icon = """
-<a href="https://github.com/Sumeyye-Celik" target="_blank">
-    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='30' height='30' viewBox='0 0 48 48'%3E%3Cpath d='M44,24c0,8.96-5.88,16.54-14,19.08V38c0-1.71-0.72-3.24-1.86-4.34c5.24-0.95,7.86-4,7.86-9.66c0-2.45-0.5-4.39-1.48-5.9 c0.44-1.71,0.7-4.14-0.52-6.1c-2.36,0-4.01,1.39-4.98,2.53C27.57,14.18,25.9,14,24,14c-1.8,0-3.46,0.2-4.94,0.61 C18.1,13.46,16.42,12,14,12c-1.42,2.28-0.84,4.74-0.3,6.12C12.62,19.63,12,21.57,12,24c0,5.66,2.62,8.71,7.86,9.66 c-0.67,0.65-1.19,1.44-1.51,2.34H16c-1.44,0-2-0.64-2.77-1.68c-0.77-1.04-1.6-1.74-2.59-2.03c-0.53-0.06-0.89,0.37-0.42,0.75 c1.57,1.13,1.68,2.98,2.31,4.19C13.1,38.32,14.28,39,15.61,39H18v4.08C9.88,40.54,4,32.96,4,24C4,12.95,12.95,4,24,4 S44,12.95,44,24z'/%3E%3C/svg%3E" width="30" height="30" alt="GitHub"/>
-</a>
+<head>
+    <style>
+    .fa {
+    float: left;
+    </style>
+</head>
+<body>
+    <div class ="fa">
+        <a href="https://github.com/Sumeyye-Celik" target="_blank">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/000000/github.png" alt="github"/>
+        </a>
+    </div>
+</body>
 """
 
 # LinkedIn ve GitHub simgelerini yan yana görüntüle
 icons = f"{linkedin_icon} {github_icon}"
-column_sumeyye.markdown(icons, unsafe_allow_html=True)
+
+
+col_image.markdown(icons, unsafe_allow_html=True)
 
 
 # Metni bir şeklin içine yaz
 text_inside_shape = """
-<p class="shape" style="color: white; font-size: 18px; text-align: center; line-height: 1.6;">
+<p class="shape" style="color: black; font-size: 18px; text-align: center; line-height: 1.6;">
   I graduated from Kütahya Dumlupınar University, Department of Computer Engineering. During my university life, 
   I took part in international communities to be active. I continue to be an organiser of Google Developer Groups and Women Techmakers ambassador. 
   I have been improving myself in data for 1.5 years. In this process, I made Bitcoin price prediction as an engineering graduation project and wrote a published article about it. 
@@ -172,7 +244,7 @@ shape_container.markdown(
     """
     <style>
         .shape {
-            background-color: #3498db; /* Açık mavi tonu */
+            background-color: #add8e6; /* Açık mavi tonu */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
@@ -183,11 +255,7 @@ shape_container.markdown(
 )
 
 # Şeklin içine metni yerleştir
-shape_container.markdown(
-    f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True
-)
-
-
+col_text.markdown(f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True)
 # TAB HOME#
 
 tab_home.subheader(":blue[Health Prediction App]")
