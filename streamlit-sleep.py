@@ -531,7 +531,7 @@ column_model.title("😴PREDICT SLEEP DISORDER😴")
 # Modeli yükle
 model = get_model()
 
-
+ 
 # Veri setindeki sütunları büyük harfe çevir
 df.columns = df.columns.str.upper()
 
