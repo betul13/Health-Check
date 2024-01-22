@@ -29,7 +29,7 @@ def get_model():
 
 @st.cache_data
 def get_heart_data():
-    heart = pd.read_csv(r"C:\Users\bett0\Desktop\HEART\heart (1).csv")
+    heart = pd.read_csv(r"heart (1).csv")
     return heart
 
 
