@@ -813,7 +813,7 @@ user_data_combined = pd.concat(
 user_data_combined = pd.concat([user_df["GENDER"], user_data_combined], axis=1)
 
 
-if column_model.button("Tahmin Et"):
+if column_model.button("Predict"):
     # Modeli yükle
     with open("stacking_model.joblib", "rb") as model_file:
         final_model = joblib.load(model_file)
@@ -910,7 +910,7 @@ user_input = pd.DataFrame(
         "slp": [encode_slp],
     }
 )
-if column_heart.button("Tahmin et", key="heart_button_key"):
+if column_heart.button("Predict", key="heart_button_key"):
     prediction = heart_model.predict(user_input)
     if prediction == 0:
         column_heart.success(
