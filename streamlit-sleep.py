@@ -47,12 +47,13 @@ tab_info, tab_home, tab_vis, tab_heart, tab_model = st.tabs(
     ("Information", "Sleep Disorder", "Sleep Disorder Graphics", "Heart ", "Model")
 )
 
-#TAB INFO#
+# TAB INFO#
 
 tab_info.title("")
 
 # Sayfa içeriğini ortala ve büyüt
-tab_info.markdown("""
+tab_info.markdown(
+    """
 <div style='text-align: center; font-size: 25px;'> 
 This application is a data science project that predicts important health conditions such as <strong>sleep disorders</strong> and <strong>heart health</strong>.
 Health predictions provide valuable information about individuals' lifestyle and health habits.
@@ -60,26 +61,30 @@ It can help in early diagnosis, personalised treatment and development of health
 This project was carried out by <strong>Betül Ulucak</strong> and <strong>Sümeyye Çelik</strong> as a graduation project of <strong>SistersLab - Women in Science and Technology Association AdaLovelace Academy</strong>.
 We would like to thank our lecturer <strong>Kemal Soylu</strong>, our <strong>project assistants</strong> and our mentor <strong>Aylin Kaymaz</strong> for taking care of us during the academy. 
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 tab_info.title("")
 
-tab_info.markdown("""
+tab_info.markdown(
+    """
 <div style='text-align: center; font-size: 40px;'>
     <h1 style="color:#3498db;">About Us</h1>
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
-column_betul,column_sumeyye = tab_info.columns(2)
+column_betul, column_sumeyye = tab_info.columns(2)
 
 
-
-col_image2 , col_text2 = column_betul.columns([1,2])
+col_image2, col_text2 = column_betul.columns([1, 2])
 
 # Fotoğrafı ekleyin
 image_path = "IMG_4410.png"  # Resminizin doğru dosya yolunu belirtin
 image = Image.open(image_path)
-new_image = image.resize((200,200))
+new_image = image.resize((200, 200))
 col_image2.image(new_image)
 
 col_image2.header("Betül Uluocak")
@@ -100,7 +105,7 @@ linkedin_icon = """
         </a>
     </div>
 </body>
-""" 
+"""
 
 github_icon = """
 <head>
@@ -116,7 +121,7 @@ github_icon = """
         </a>
     </div>
 </body>
-""" 
+"""
 
 # LinkedIn ve GitHub simgelerini yan yana görüntüle
 icons = f"{linkedin_icon} {github_icon}"
@@ -157,15 +162,17 @@ shape_container.markdown(
 )
 
 # Şeklin içine metni yerleştir
-col_text2.markdown(f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True)
+col_text2.markdown(
+    f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True
+)
 
-col_image, col_text = column_sumeyye.columns([1,2])
+col_image, col_text = column_sumeyye.columns([1, 2])
 
 # Fotoğrafı ekleyin
-image_path = "Ekran Görüntüsü (213).png"  
+image_path = "Ekran Görüntüsü (213).png"
 image = Image.open(image_path)
-new_image = image.resize((200,200))
-image_knm ="""
+new_image = image.resize((200, 200))
+image_knm = """
 <head>
     <style>
     .fa {
@@ -179,7 +186,7 @@ image_knm ="""
         </a>
     </div>
 </body>
-""" 
+"""
 col_image.image(new_image)
 
 col_image.header("Sümeyye Çelik")
@@ -255,7 +262,9 @@ shape_container.markdown(
 )
 
 # Şeklin içine metni yerleştir
-col_text.markdown(f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True)
+col_text.markdown(
+    f'<div class="shape">{text_inside_shape}</div>', unsafe_allow_html=True
+)
 # TAB HOME#
 
 column_sleep, column_dataset = tab_home.columns(2, gap="large")
@@ -586,11 +595,11 @@ with col2.container(border=True):
 
 column_model, column_heart = tab_model.columns(2, gap="large")
 
-column_model.title("😴PREDICT SLEEP DISORDER😴")
+column_model.title("😴Predict Sleep Disorder😴")
 # Modeli yükle
 model = get_model()
 
- 
+
 # Veri setindeki sütunları büyük harfe çevir
 df.columns = df.columns.str.upper()
 
@@ -605,9 +614,7 @@ new_data = {}
 gender = column_model.selectbox("GENDER", df["GENDER"].unique())
 
 
-age = column_model.number_input(
-    "AGE",value=df["AGE"].min()
-)
+age = column_model.number_input("AGE", value=df["AGE"].min())
 
 
 occupation = column_model.selectbox("OCCUPATION", df["OCCUPATION"].unique())
@@ -616,29 +623,23 @@ sleep_duration = column_model.number_input(
     "SLEEP DURATION",
     min_value=0.0,
     max_value=24.0,
-    step = 0.1,
-    value=df["SLEEP DURATION"].min()
+    step=0.1,
+    value=df["SLEEP DURATION"].min(),
 )
 
 quality_sleep = column_model.number_input(
-    "QUALITY OF SLEEP",
-    min_value=0,
-    max_value=10,
-    value=df["QUALITY OF SLEEP"].min()
+    "QUALITY OF SLEEP", min_value=0, max_value=10, value=df["QUALITY OF SLEEP"].min()
 )
 
 physical_activity_level = column_model.number_input(
     "PHYSICAL ACTIVITY LEVEL",
     min_value=0,
     max_value=100,
-    value=df["PHYSICAL ACTIVITY LEVEL"].min()
+    value=df["PHYSICAL ACTIVITY LEVEL"].min(),
 )
 
 stress_level = column_model.number_input(
-    "STRESS LEVEL",
-    min_value=0,
-    max_value=10,
-    value=df["STRESS LEVEL"].min()
+    "STRESS LEVEL", min_value=0, max_value=10, value=df["STRESS LEVEL"].min()
 )
 
 bmı_category = column_model.selectbox("BMI CATEGORY", df["BMI CATEGORY"].unique())
@@ -647,13 +648,10 @@ heart_rate = column_model.number_input(
     "HEART RATE",
     min_value=df["HEART RATE"].min(),
     max_value=df["HEART RATE"].max(),
-    value=df["HEART RATE"].min()
+    value=df["HEART RATE"].min(),
 )
 
-daily_steps = column_model.number_input(
-    "DAILY STEPS",
-    value=df["DAILY STEPS"].min()
-)
+daily_steps = column_model.number_input("DAILY STEPS", value=df["DAILY STEPS"].min())
 
 blood_pressure_cat = column_model.selectbox(
     "BLOOD PRESSURE CATEGORY", df["BLOOD PRESSURE CATEGORY"].unique()
@@ -744,7 +742,14 @@ encoded_user_data = encoder.transform(
 ).toarray()
 
 # One-Hot Encoding sonrası sütun isimlerini al
-encoded_columns = encoder.get_feature_names_out(input_features=["OCCUPATION","BMI CATEGORY","BLOOD PRESSURE CATEGORY","NEW_AGE_CAT"])
+encoded_columns = encoder.get_feature_names_out(
+    input_features=[
+        "OCCUPATION",
+        "BMI CATEGORY",
+        "BLOOD PRESSURE CATEGORY",
+        "NEW_AGE_CAT",
+    ]
+)
 
 # One-Hot Encoding sonrası veriyi DataFrame'e dönüştür
 encoded_user_data = pd.DataFrame(encoded_user_data, columns=encoded_columns)
@@ -819,9 +824,13 @@ if column_model.button("Tahmin Et"):
     if prediction == 0:
         column_model.success("SLEEPING SICKNESS PREDICTION: You have healthy sleep!")
     elif prediction == 1:
-        column_model.warning("SLEEPING SICKNESS PREDICTION: You may have sleep problems, you should see a doctor! You are showing symptoms of insomnia.")
+        column_model.warning(
+            "SLEEPING SICKNESS PREDICTION: You may have sleep problems, you should see a doctor! You are showing symptoms of insomnia."
+        )
     elif prediction == 2:
-        column_model.error("SLEEPING SICKNESS PREDICTION: You have healthy sleep! You are showing symptoms of Sleep Apnea." )
+        column_model.error(
+            "SLEEPING SICKNESS PREDICTION: You have healthy sleep! You are showing symptoms of Sleep Apnea."
+        )
 
 
 # TAB MODEL
@@ -882,7 +891,9 @@ restecg = column_heart.selectbox(
 )
 encode_restecg = label_encoder_resteg.transform([restecg])[0]
 thalachh = column_heart.number_input("Maximum heart rate", min_value=50, max_value=300)
-slp = column_heart.selectbox("Slope of the exercise ST segment", ["Upsloping", "Flat", "Downsloping"])
+slp = column_heart.selectbox(
+    "Slope of the exercise ST segment", ["Upsloping", "Flat", "Downsloping"]
+)
 
 encode_slp = label_encoder_slp.transform([slp])[0]
 
@@ -897,10 +908,16 @@ user_input = pd.DataFrame(
         "restecg": [encode_restecg],
         "thalachh": [thalachh],
         "slp": [encode_slp],
-    })
+    }
+)
 if column_heart.button("Tahmin et", key="heart_button_key"):
     prediction = heart_model.predict(user_input)
     if prediction == 0:
-        column_heart.success(f"You have a healthy heart, but it is recommended that you see a doctor for a definitive conclusion.")
+        column_heart.success(
+            f"You have a healthy heart, but it is recommended that you see a doctor for a definitive conclusion."
+        )
     else:
-        column_heart.warning("You seem to have a heart condition. It is recommended that you go to the doctor for a check-up.",icon="⚠️",)
+        column_heart.warning(
+            "You seem to have a heart condition. It is recommended that you go to the doctor for a check-up.",
+            icon="⚠️",
+        )
