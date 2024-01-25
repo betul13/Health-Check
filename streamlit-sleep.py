@@ -58,7 +58,7 @@ tab_info.markdown(
 This application is a data science project that predicts important health conditions such as <strong>sleep disorders</strong> and <strong>heart health</strong>.
 Health predictions provide valuable information about individuals' lifestyle and health habits.
 It can help in early diagnosis, personalised treatment and development of healthy living strategies.
-This project was carried out by <strong>Betül Ulucak</strong> and <strong>Sümeyye Çelik</strong> as a graduation project of <strong>SistersLab - Women in Science and Technology Association AdaLovelace Academy</strong>.
+This project was carried out by <strong>Betül Uluocak</strong> and <strong>Sümeyye Çelik</strong> as a graduation project of <strong>SistersLab - Women in Science and Technology Association AdaLovelace Academy</strong>.
 We would like to thank our lecturer <strong>Kemal Soylu</strong>, our <strong>project assistants</strong> and our mentor <strong>Aylin Kaymaz</strong> for taking care of us during the academy. 
 </div>
 """,
